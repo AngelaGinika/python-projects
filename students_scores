@@ -1,0 +1,8 @@
+scores = [45, 67, 52, 38, 81, 60, 49, 73, 55, 40]
+
+average = sum(scores) / len(scores)
+
+print("Student scores:", scores)
+print("Average score:", average)
+print("Highest score:", max(scores))
+print("Lowest score:", min(scores))
