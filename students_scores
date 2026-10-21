@@ -1,3 +1,4 @@
+
 scores = [45, 67, 52, 38, 81, 60, 49, 73, 55, 40]
 
 average = sum(scores) / len(scores)
@@ -6,3 +7,12 @@ print("Student scores:", scores)
 print("Average score:", average)
 print("Highest score:", max(scores))
 print("Lowest score:", min(scores))
+
+passed = sum(1 for score in scores if score >= 50)
+print("Students scoring 50 or above:", passed)
+
+failed = sum(1 for score in scores if score < 50)
+print("Students scoring below 50:", failed)
+
+pass_rate = (passed / len(scores)) * 100
+print("Pass rate:", pass_rate, "%")
