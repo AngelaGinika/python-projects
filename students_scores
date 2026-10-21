@@ -16,3 +16,8 @@ print("Students scoring below 50:", failed)
 
 pass_rate = (passed / len(scores)) * 100
 print("Pass rate:", pass_rate, "%")
+for score in scores:
+    if score >= 50:
+        print(score, "- Pass")
+    else:
+        print(score, "- Fail")
