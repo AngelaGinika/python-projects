@@ -21,3 +21,7 @@ for score in scores:
         print(score, "- Pass")
     else:
         print(score, "- Fail")
+if pass_rate >= 50:
+    print("Class performance: More than half the students passed.")
+else:
+    print("Class performance: Fewer than half the students passed.")
